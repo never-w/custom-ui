@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AlertProps, KindMap } from './interface';
+import type { AlertProps, KindMap } from './interface';
 import './style/index.less';
 
 const prefixCls = 'custom-alert';

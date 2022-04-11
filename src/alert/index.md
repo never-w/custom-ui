@@ -22,6 +22,4 @@ group:
 
 ## API
 
-| 属性 | 说明     | 类型                                                | 默认值 |
-| ---- | -------- | --------------------------------------------------- | ------ |
-| kind | 警告类型 | `info` \|`positive` \|`negative` \|`warning` 非必填 | 'info' |
+<API hideTitle src="./alert.tsx" />

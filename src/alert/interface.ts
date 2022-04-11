@@ -1,11 +1,11 @@
+import { HTMLAttributes } from 'react';
+
 export type Kind = 'info' | 'positive' | 'negative' | 'warning';
 export type KindMap = Record<Kind, string>;
 
-export interface AlertProps {
+export interface AlertProps extends HTMLAttributes<HTMLDivElement> {
   /**
-   * Set this to change alert kind
-   * @default info
+   * 警告提示的类型
    */
   kind?: 'info' | 'positive' | 'negative' | 'warning';
-  children?: React.ReactNode;
 }
