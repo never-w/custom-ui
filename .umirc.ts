@@ -11,7 +11,7 @@ export default defineConfig({
   },
   apiParser: {
     propFilter: {
-      // 是否忽略从 node_modules 继承的属性，默认值为 false
+      // 是否忽略从 node_modules 继承的属性，默认值为 false，所以这里改为true
       skipNodeModules: true,
     },
   },
