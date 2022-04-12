@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { memo } from 'react';
+import type { FC } from 'react';
 
 import type { AlertProps, KindMap } from './interface';
 import './style/index.less';
@@ -12,7 +13,7 @@ const kinds: KindMap = {
   warning: '#FFA502',
 };
 
-const Alert: React.FC<AlertProps> = ({ children, kind = 'info', ...rest }) => (
+const Alert: FC<AlertProps> = ({ children, kind = 'info', ...rest }) => (
   <div
     className={prefixCls}
     style={{
@@ -24,4 +25,4 @@ const Alert: React.FC<AlertProps> = ({ children, kind = 'info', ...rest }) => (
   </div>
 );
 
-export default Alert;
+export default memo<typeof Alert>(Alert);

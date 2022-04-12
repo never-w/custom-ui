@@ -9,12 +9,18 @@ export default defineConfig({
   alias: {
     '@': './src',
   },
+  apiParser: {
+    propFilter: {
+      // 是否忽略从 node_modules 继承的属性，默认值为 false
+      skipNodeModules: true,
+    },
+  },
   mode: 'site',
   navs: [
     null,
     {
       title: 'GitHub',
-      path: '',
+      path: 'https://github.com/never-w/custom-ui.git',
     },
   ],
   locales: [['zh-CN', '中文']],
