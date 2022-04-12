@@ -13,7 +13,7 @@ group:
 
 custom-ui，自定义封装的 web 组件库
 
-## 安装跨端的 react hooks
+## 安装 custom-ui 组件库
 
 ```bash
 $ npm install --save custom-ui
